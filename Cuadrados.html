@@ -1,0 +1,135 @@
+<<html>
+<head>
+  <style type="text/css">
+    canvas{
+      border: 1px solid;
+    }
+  </style>
+  <title>cuadrado html5</title></head>
+<body>
+    <canvas id="c" width="500" height="600"></canvas>
+   <script type="text/javascript">
+    var canvas, ctx;
+    function drawBall(x,y,r,color){
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.arc(x, y, r, 0, Math.PI*2, true);
+      ctx.closePath();
+      ctx.fill();
+ }
+
+ function clear(){
+  canvas.width =  canvas.width;
+}
+
+function init(){
+  canvas = document.getElementById("c");
+  ctx = canvas.getContext("2d");
+  setInterval(loop, 1000/30);
+}
+function loop(){
+
+    ctx.strokeStyle = "#000000";
+    ctx.fillStyle= "#0000FF"
+    ctx.strokeRect(20,20,50,50);
+    ctx.strokeRect(20,70,50,50);
+    ctx.strokeRect(20,120,50,50);
+    ctx.strokeRect(20,170,50,50)
+    ctx.fillRect(21,171,48,48);
+    ctx.strokeRect(20,220,50,50);
+    ctx.fillRect(21,221,48,48)
+    ctx.strokeRect(20,270,50,50);
+    ctx.fillRect(21,271,48,48)
+    ctx.strokeRect(20,320,50,50);
+    ctx.fillRect(21,321,48,48)
+    ctx.strokeRect(20,370,50,50);
+    ctx.fillRect(21,371,48,48)
+
+    ctx.strokeStyle = "#000000";
+    ctx.fillStyle= "#0000FF"
+    ctx.strokeRect(70,20,50,50);
+    ctx.strokeRect(70,70,50,50);
+    ctx.strokeRect(70,120,50,50);
+ctx.fillRect(71,121,48,48);
+    ctx.strokeRect(70,170,50,50);
+    ctx.strokeRect(70,220,50,50);
+    ctx.strokeRect(70,270,50,50);
+ctx.fillRect(71,271,48,48);
+    ctx.strokeRect(70,320,50,50);
+    ctx.strokeRect(70,370,50,50);
+     
+ ctx.strokeStyle = "#000000";
+    ctx.fillStyle= "#0000FF"
+    ctx.strokeRect(120,20,50,50);
+    ctx.strokeRect(120,70,50,50);
+ctx.fillRect(121,71,48,48);
+    ctx.strokeRect(120,120,50,50);
+    ctx.strokeRect(120,170,50,50);
+    ctx.strokeRect(120,220,50,50);
+    ctx.strokeRect(120,270,50,50);
+ctx.fillRect(121,271,48,48);
+    ctx.strokeRect(120,320,50,50);
+    ctx.strokeRect(120,370,50,50);
+
+ctx.strokeStyle = "#000000";
+    ctx.fillStyle= "#0000FF"
+    ctx.strokeRect(170,20,50,50);
+ctx.fillRect(171,21,48,48);
+    ctx.strokeRect(170,70,50,50);
+    ctx.strokeRect(170,120,50,50);
+    ctx.strokeRect(170,170,50,50);
+    ctx.strokeRect(170,220,50,50);
+    ctx.strokeRect(170,270,50,50);
+ctx.fillRect(171,271,48,48);
+    ctx.strokeRect(170,320,50,50);
+    ctx.strokeRect(170,370,50,50);
+
+ctx.strokeStyle = "#000000";
+    ctx.fillStyle= "#0000FF"
+    ctx.strokeRect(220,20,50,50);
+    ctx.strokeRect(220,70,50,50);
+ctx.fillRect(221,71,48,48);
+    ctx.strokeRect(220,120,50,50);
+    ctx.strokeRect(220,170,50,50);
+    ctx.strokeRect(220,220,50,50);
+    ctx.strokeRect(220,270,50,50);
+ctx.fillRect(221,271,48,48);
+    ctx.strokeRect(220,320,50,50);
+    ctx.strokeRect(220,370,50,50);
+
+ctx.strokeStyle = "#000000";
+    ctx.fillStyle= "#0000FF"
+    ctx.strokeRect(270,20,50,50);
+    ctx.strokeRect(270,70,50,50);
+    ctx.strokeRect(270,120,50,50);
+ctx.fillRect(271,121,48,48);
+    ctx.strokeRect(270,170,50,50);
+    ctx.strokeRect(270,220,50,50);
+    ctx.strokeRect(270,270,50,50);
+ctx.fillRect(271,271,48,48);
+    ctx.strokeRect(270,320,50,50);
+    ctx.strokeRect(270,370,50,50);
+
+ ctx.strokeStyle = "#000000";
+    ctx.fillStyle= "#0000FF"
+    ctx.strokeRect(320,20,50,50);
+    ctx.strokeRect(320,70,50,50);
+    ctx.strokeRect(320,120,50,50);
+    ctx.strokeRect(320,170,50,50);
+ctx.fillRect(321,171,48,48);
+    ctx.strokeRect(320,220,50,50);
+ctx.fillRect(321,221,48,48);
+    ctx.strokeRect(320,270,50,50);
+ctx.fillRect(321,271,48,48);
+    ctx.strokeRect(320,320,50,50);
+ctx.fillRect(321,321,48,48);
+    ctx.strokeRect(320,370,50,50);
+ctx.fillRect(321,371,48,48);
+
+ 
+}
+
+window.onload = init;
+    </script>
+  </body>
+</html>
